@@ -1,0 +1,29 @@
+language ESSENCE' 1.0
+
+given n : int
+
+letting d be domain int(1..n)
+
+find 	M : matrix indexed by [d,int(1,2)] of d
+
+such that
+
+	$ No queens share an x co-ordinate
+	allDiff(flatten(M[..,1])),
+	
+	$ No queens share a y co-ordinate
+	allDiff(flatten(M[..,2])),
+	
+	$ No queens share a forward diagonal
+	forAll i : d .
+		forAll j : int(i+1..n) .
+			(M[i,1] - M[i,2]) != (M[j,1] - M[j,2]),
+	
+	$ No queens share a backward diagonal
+	forAll i : d .
+		forAll j : int(i+1..n) .
+			(M[i,1] + M[i,2]) != (M[j,1] + M[j,2]),
+	
+	$ Order results by x co-ordinate to rule out symmetry (of n!) introduced by the model
+	forAll i : int(1..n-1) .
+		M[i,1] < M[i+1,1]

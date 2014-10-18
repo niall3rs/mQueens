@@ -1,0 +1,13 @@
+Feedback from Ian Gent at 23/03/2014 22:35:
+
+This is excellent work and deserves a very high mark.
+
+You have succeeded in all parts. I especially congratulate you on the symmetry breaking, which is exactly right. This guarantees to break all symmetry. Well done.
+
+I have two criticisms, both linked. The major one is that the report seems too long, and does not focus on the essentials. For example, I think it was a very sensible to build up from a solution to the n queens problem, and then take the lessons learnt and adapt the model for m-queens. However your report devotes quite a lot of space to your solution of a problem which was not the one we asked for! I would have preferred much briefer details of n-queens and then much more clearly expressed presentation of the m-queens model. As it was I had to cross correlate your submitted e-prime with the text. A single presentation of the m-queens model, with e-prime snippets or other details woudl have been better.
+
+Second, in a couple of places you got yourself into a mess with expressing the models and had to fix it in slightly inelegant ways. The inelegance is not a problem, and I applaud you for reporting this honestly. But I would suggest that in future, when you get into this kind of trouble, you consider if you can take a step back and find a cleaner model to avoid the problem. In this case you did find a way to avoid the problem of the long diagonal in the second model, but it would have been cleaner to avoid the dummy values causing this problem in the first place.
+
+Another point that you could have done better is to have had scripts or other automated ways of running experiments which would mean that they would be more easily repeatable and checkable.
+
+I have emphasised these areas for improvement but overall this is excellent work and I congratulate you again.
